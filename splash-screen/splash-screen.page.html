@@ -1,0 +1,20 @@
+<ion-content>
+  <div class="main">
+    <div class="splash-screen-img">
+      <img src="assets/imgs/logo.png" />
+      <img src="assets/imgs/goby.png" />
+    </div>
+
+    <div class="rectangle-container">
+      <div
+        [@expandCollapse]="isExpanded ? 'expanded' : 'collapsed'"
+        class="rectangle"
+      >
+        <!-- Content here will expand and collapse -->
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar> Powered by Seto® </ion-toolbar>
+</ion-footer>

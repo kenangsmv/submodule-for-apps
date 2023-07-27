@@ -1,0 +1,54 @@
+:host {
+  ion-content {
+    --padding-end: 0;
+    --padding-start: 0;
+    .main {
+      background: var(--ion-color-primary);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .splash-screen-img {
+        width: 134px;
+        height: 222px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+          flex-shrink: 0;
+
+          :nth-child(1) {
+            width: 134px;
+            height: 134px;
+          }
+          :nth-child(2) {
+            width: 130px;
+            height: 52px;
+          }
+        }
+      }
+      .rectangle-container {
+        width: 180px;
+      }
+      .rectangle {
+        height: 4px;
+        margin-top: 5em;
+        background: black;
+      }
+    }
+  }
+
+  ion-footer {
+    background-color: var(--ion-color-primary);
+    ion-toolbar {
+      text-align: center;
+      --background: var(--ion-color-primary);
+      --padding: 0;
+    }
+  }
+}
